@@ -1,5 +1,9 @@
 "# DesignPatterns_Java" 
-"# important :Factory, Abstract Factory,singleton,observer"
+"# important Design Patterns : 
+               
+               Factory, Abstract Factory, singleton, observer
+
+               Builder , decorator, adapter, strategy , Facade"
 
 Populer Design Patterns:
 

@@ -1,0 +1,21 @@
+we have to connect two interfaces interface1 and interface2 which are not compatible with each other.in order to do so we have to write an adapter/wrapper
+so that both interfaces will understand each other.
+
+why do we need to do so?
+
+if those interfaces are not compatible you can change one interface. but we cannot do that because this situation arises usually in cases when a legacy code 
+has to be integrated with a new code or another set of programs which are incompatible with the legacy code. So in the situation when the legacy code cannot
+be modified but we still have to integrate it we come up with an adapter design pattern to solve for the  same. also, this pattern is a client focus pattern
+because you do not want your client to change or to be modified because you want to interact with the legacy code.
+
+Another Example: 
+   if legacy code is returning results which are not compatible(understandable) with the client class.  for this, we can introduce Interface Adapter to convert 
+   the output from legacy code into a client-compatible format.
+
+Another Example: Arrays.asList(array) is an example of an Adapter Design pattern.
+
+Another Example: Every hospital has an insurance office in the hospital itself to give you these documents.what they do is they take papers in their format but 
+   they modify those papers. they take the information from those papers and then modify those papers in the format as per your insurance company. if your 
+   insurance company is hdfc or MetLife or other. they will modify your papers according to your format and give them back to you then you can take those papers 
+   to your respective companies and claim the insurance.
+   insurance company at the hospital is an adapter. 

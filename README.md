@@ -3,6 +3,7 @@
 Populer Design Patterns:
 
   (1)Creational Design Patterns
+  
        -Factory Pattern
        -Constructor Pattern
        -Singleton Pattern
@@ -11,6 +12,7 @@ Populer Design Patterns:
        -Abstract pattern
        
   (2)Structural Design Patterns
+  
        -Decorator pattern
        -Facade pattern
        -Adapter pattern
@@ -20,6 +22,7 @@ Populer Design Patterns:
        -Proxy pattern
    
   (3)Behavioral Design Patterns
+  
        -Chain of Responsibility pattern
        -Command pattern
        -Iterator pattern
@@ -28,6 +31,7 @@ Populer Design Patterns:
        -Visitor pattern
    
   (4)Architectural Design Patterns
+  
        -Model-View-Controller (MVC)
        -Model-View-Presenter (MVP)
        -Model-View-ViewModel (MVVM)

@@ -1,4 +1,5 @@
 "# DesignPatterns_Java" 
+"# important :Factory, Abstract Factory,singleton,observer"
 
 Populer Design Patterns:
 

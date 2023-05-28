@@ -1,0 +1,31 @@
+Facade Design Pattern
+
+--> this falls under the category of structural design pattern.
+
+--> Provide a unified interface to a set of interfaces in a subsystem. facade defines a higher-level interface that makes the subsystem easier to use
+
+--> evolved from the French word--> it means "frontage" or "face"
+
+--> It generally refers to the exterior appearance of things. it could be a building or any other form of representation.
+    
+--> It provides an abstract view of subsystems by hiding their complexity and wrapping the complex subsystems with a simple interface. This interface
+    is responsible for calling functions of existing subsystems. 
+
+--> useful when we want to layer the subsystems. Use a facade to define an entry point to each subsystem level. and if the subsystems are dependent you 
+    can simplify the dependencies between them by making them communicate with each other solely through their facades.
+
+
+-->Java Code Exaplation
+
+   In this example, we have a complex subsystem with two classes: SubsystemA and SubsystemB. Each subsystem class has its own set of operations 
+   (operationA in SubsystemA and operationB in SubsystemB).The Facade class acts as a simplified interface or a unified entry point to these subsystems. 
+   It encapsulates the creation and interaction with the subsystem objects. The Facade class initializes the subsystem objects (SubsystemA and SubsystemB) 
+   within its constructor.The Facade class exposes a single method called operation(). Internally, this method invokes the corresponding methods of the 
+   subsystem classes. The client code interacts with the Facade class and calls the operation() method to perform the desired operations.By using the 
+   Facade Pattern,the client code is shielded from the complexities of the subsystem classes. It only needs to interact with the simplified interface
+   provided by the Facade class, which internally delegates the operations to the appropriate subsystem classes. This simplifies the usage and reduces
+   the dependencies between the client code and the subsystem.
+
+   In this example, when the main method of the client code is executed, it creates an instance of the Facade class and calls the operation() method. 
+   The operation() method, in turn, invokes the corresponding operations of SubsystemA and SubsystemB, providing a unified and simplified interface for 
+   the client.

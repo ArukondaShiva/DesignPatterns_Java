@@ -1,0 +1,11 @@
+Delegation Design Pattern:
+  The delegation design pattern, also known as the composition design pattern, is a structural design pattern in object-oriented programming.
+  It allows an object to delegate some of its responsibilities to another object, thereby promoting code reuse and modularity.
+  In Java, the delegation design pattern can be implemented using composition, where a class includes an instance of another class to perform certain tasks.
+  
+In the above example, the Printer class delegates the responsibility of printing to the InkjetPrinter class. The Printer class includes an instance of the
+InkjetPrinter class, and when the print method is called on the Printer object, it delegates the task to the InkjetPrinter object.
+
+This design pattern allows the Printer class to abstract away the details of printing and reuse the functionality provided by the InkjetPrinter class. 
+It provides flexibility and separation of concerns by allowing different types of printers to be easily incorporated into the Printer class without modifying
+its code.

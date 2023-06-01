@@ -1,0 +1,16 @@
+State Design Pattern:
+
+  The State design pattern allows an object to alter its behavior when its internal state changes. 
+  It promotes loose coupling by encapsulating each state as a separate class and delegating the behavior to the current state object.
+  
+  Example: 
+    The LightBulb class represents the context, which maintains a reference to the current state and delegates the behavior to that state.
+    The State interface defines the behavior that the concrete states should implement.
+    The OnState and OffState classes are the concrete state implementations that define the behavior when the light bulb is turned on or off.
+    
+  When the toggle() method is called on the LightBulb object:
+    If the light bulb is in the OffState, it prints "Turning on the light bulb." and changes the state to OnState.
+    If the light bulb is in the OnState, it prints "Turning off the light bulb." and changes the state to OffState.
+ 
+ The State design pattern provides a way to manage state-dependent behavior in a flexible and extensible manner. It allows objects to change their
+ behavior dynamically without directly changing their class, promoting better code organization, maintainability, and reusability.

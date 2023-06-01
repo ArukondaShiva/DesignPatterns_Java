@@ -15,3 +15,6 @@ Strategy Design Pattern:
   strategy pattern example setup with a simple program. Main.java
   
   
+Class Diagram of above Example: ![StrategyPattern](https://github.com/ArukondaShiva/DesignPatterns_Java/assets/49832102/87a9f071-1c0e-4637-b714-cc2080b2fc21)
+
+Source : https://www.digitalocean.com

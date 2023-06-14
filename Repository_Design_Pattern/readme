@@ -1,0 +1,13 @@
+The Repository design pattern is a commonly used pattern in software development for managing data persistence and retrieval.
+It provides an abstraction layer between the application logic and the data storage mechanism, allowing for separation of
+concerns and improved code maintainability.
+
+Above Example:
+In the example above, we define the UserRepository interface that declares the methods for finding, saving, and deleting users.
+Then, we provide two implementations: DatabaseUserRepository for interacting with a database and InMemoryUserRepository for storing users in memory.
+
+Clients of the repository can depend on the UserRepository interface without being concerned about the underlying storage mechanism. 
+They can switch between different implementations easily without affecting the rest of the codebase.
+
+Keep in mind that this is a simplified example, and in a real-world application, you may need to handle exceptions, implement additional methods,
+or use a dependency injection framework to manage the repository dependencies.

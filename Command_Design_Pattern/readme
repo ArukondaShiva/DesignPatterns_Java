@@ -1,0 +1,15 @@
+In the command pattern, the request is sent to the invoker and the invoker passes it to the encapsulated command object. Command object passes the request 
+to the appropriate method of Receiver to perform the specific action. The client program creates the receiver object and then attaches it to the Command.
+Then it creates the invoker object and attaches the command object to perform an action. Now when the client program executes the action, it’s processed 
+based on the command and receiver object.
+
+In this above example, we have a Command interface that declares the execute method. The TurnOnCommand and TurnOffCommand classes are concrete 
+implementations of the Command interface, each encapsulating a specific operation on the Light object. The Light class acts as the receiver of the 
+commands and provides the methods to turn on and off the light. In the client code, we create instances of the commands and the receiver (light). 
+We then call the execute method on each command, which in turn invokes the appropriate method on the receiver (light). This simplified example demonstrates
+how the Command pattern encapsulates different operations (turning on and off the light) as command objects, allowing them to be executed independently.
+
+Class Diagram : (I did draw my own)
+![CommandDesignPattern_Class](https://github.com/ArukondaShiva/DesignPatterns_Java/assets/49832102/fea1ae9e-5e77-48d2-b007-de5881a33e99)
+
+

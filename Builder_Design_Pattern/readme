@@ -1,0 +1,31 @@
+Builder Design Pattern:
+The Builder Design Pattern is a programming technique that helps create complex objects by breaking down the construction process into smaller steps. 
+It separates the process of building an object from its final representation, allowing you to construct different variations of an object using the
+same building process. This pattern is particularly useful when dealing with objects with many parts or options.
+
+From the above example:
+The above example code is an implementation of the Builder Design Pattern in Java. It creates a Dog class and a corresponding DogBuilder class to
+construct instances of Dog objects with various attributes. Let's break down how your code works:
+
+The Dog Class: This class represents the complex object you want to create: a dog with various attributes.
+
+The Dog class has private fields for name, gender, breed, and price.
+The constructor of the Dog class accepts a DogBuilder object as a parameter. It extracts the values from the builder to initialize the dog's attributes.
+The DogBuilder Class: This class is the concrete builder that constructs Dog objects step by step.
+
+The DogBuilder class has private fields for name, gender, breed, and price, which correspond to the attributes of the dog being built.
+It provides setter methods for each attribute that return the builder instance itself (this). This allows method chaining to set multiple attributes in a
+single statement.
+The build method constructs and returns a Dog object using the attributes stored in the builder.
+The Driver Class (Main): This is the main class where you demonstrate how to use the builder pattern to create Dog objects.
+
+In the main method, you create two Dog objects (dogOne and dogTwo) using the DogBuilder class. You chain the setter methods to set the attributes.
+After constructing the dogs, you print their details using the toString method and also directly print their names.
+Here's the flow of what happens:
+
+You create dogOne by chaining setter methods to set the name, gender, breed, and price using the DogBuilder.
+You create dogTwo by chaining setter methods to set the gender and name using the DogBuilder.
+The DogBuilder constructs the Dog objects by calling the build method, passing the attributes stored in the builder.
+You print the details of both dogs using their toString methods and also print their names directly.
+The Builder Design Pattern helps keep the construction of complex objects organized and allows for the flexible creation of objects with various attribute
+combinations. It also makes the code more readable and reduces the need for constructors with numerous parameters.
